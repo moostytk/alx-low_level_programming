@@ -1,20 +1,22 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Print all single digit numbers
+ * _isalpha - check the code for ALX School students.
  *
- * Return: Always 0 (Success)
+ *  @c: is c an integer argument
+ *
+ *  Return: Always 0.
  */
 
-int main(void)
+int _isalpha(int c)
 {
-	int digit;
-
-	for (digit = 0; digit < 10; digit++)
+	if (c >= 97 && c <= 122)
 	{
-		printf("%i", digit);
-		putchar('\n');
-
-		return (0);
+		return (1);
 	}
+	else if (c >= 65 && c <= 90)
+	{
+		return (1);
+	}
+	return (1);
 }
